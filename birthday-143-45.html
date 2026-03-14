@@ -16,7 +16,7 @@
   .lbl{font-size:11px;letter-spacing:.38em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;}
   h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3.8rem);background:linear-gradient(135deg,var(--gold) 0%,var(--rose) 55%,#fff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1;}
   .sub{margin-top:14px;font-size:13px;color:rgba(240,232,255,.48);font-style:italic;font-family:'Playfair Display',serif;}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:36px;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:36px;width:80%;align-items:center;align-content:center;text-align:center}
   .card{background:rgba(255,255,255,.03);border:1px solid rgba(245,200,66,.18);border-radius:14px;padding:22px 18px;transition:transform .3s,border-color .3s;}
   .card:hover{transform:translateY(-4px);border-color:rgba(245,200,66,.48);}
   .ctag{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
@@ -592,7 +592,7 @@ function drawCard(){
   var fo='r = a·(1 + cos θ)'; ctx.fillText(fo,cx-ctx.measureText(fo).width/2,cy+6);
   ctx.fillStyle='rgba(245,200,66,.45)'; ctx.font='11px JetBrains Mono,monospace';
   var fs2='a ∝ 45   |   θ speciale = π/3.14 ≈ 1 rad'; ctx.fillText(fs2,cx-ctx.measureText(fs2).width/2,cy+22);
-  [[ROSE,'Cardioide r=a(1+cosθ) — il cuore della festa'],[LILAC,'Spirale di Archimede r=(π/10)·θ'],[GOLD,'Raggi ogni 45° — il tuo numero']].forEach(function(p,i,arr){
+  [[ROSE,'Cardioide r=a(1+cosθ) — il cuore della festa'],[LILAC,'Spirale di Archimede r=(π/10)·θ'],[GOLD,'Raggi ogni 45°']].forEach(function(p,i,arr){
     var lx=14,ly=H-14-(arr.length-1-i)*17;
     ctx.fillStyle=p[0]; ctx.fillRect(lx,ly-7,15,2.5);
     ctx.font='9.5px JetBrains Mono,monospace'; ctx.fillText(p[1],lx+21,ly-1);
