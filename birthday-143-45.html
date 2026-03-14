@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buon 45° Compleanno — 14 Marzo · Giorno di π</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=JetBrains+Mono:wght@300;400;700&display=swap');
+  :root{--gold:#f5c842;--rose:#e8567a;--deep:#0d0a1a;--soft:#f0e8ff;--teal:#42e8d5;--lilac:#c084fc;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--deep);color:var(--soft);font-family:'JetBrains Mono',monospace;padding:36px 20px 90px;}
+  body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(245,200,66,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(245,200,66,0.07) 1px,transparent 1px);background-size:40px 40px;animation:gridMove 20s linear infinite;z-index:0;}
+  @keyframes gridMove{from{background-position:0 0}to{background-position:40px 40px}}
+  .wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;}
+  header{text-align:center;margin-bottom:52px;}
+  .lbl{font-size:11px;letter-spacing:.38em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;}
+  h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3.8rem);background:linear-gradient(135deg,var(--gold) 0%,var(--rose) 55%,#fff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.1;}
+  .sub{margin-top:14px;font-size:13px;color:rgba(240,232,255,.48);font-style:italic;font-family:'Playfair Display',serif;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:36px;}
+  .card{background:rgba(255,255,255,.03);border:1px solid rgba(245,200,66,.18);border-radius:14px;padding:22px 18px;transition:transform .3s,border-color .3s;}
+  .card:hover{transform:translateY(-4px);border-color:rgba(245,200,66,.48);}
+  .ctag{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+  .ceq{font-size:1.3rem;font-weight:700;color:var(--rose);margin-bottom:6px;line-height:1.2;}
+  .cdesc{font-size:11.5px;color:rgba(240,232,255,.58);line-height:1.75;}
+  .cdesc em{color:var(--gold);font-style:normal;font-weight:700;}
+  .div{display:flex;align-items:center;gap:14px;margin:46px 0 28px;}
+  .div::before,.div::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(245,200,66,.36),transparent);}
+  .div span{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);white-space:nowrap;}
+  .div.bonus span{color:var(--rose);}
+  .div.bonus::before,.div.bonus::after{background:linear-gradient(90deg,transparent,rgba(232,86,122,.4),transparent);}
+  .box{background:rgba(255,255,255,.025);border:1px solid rgba(245,200,66,.14);border-radius:16px;padding:22px 18px 18px;margin-bottom:20px;transition:border-color .3s;}
+  .box:hover{border-color:rgba(245,200,66,.34);}
+  .box.bonus{border-color:rgba(232,86,122,.2);}
+  .boxtitle{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;text-align:center;}
+  .boxtitle.bonus{color:var(--rose);}
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:20px;}
+  @media(max-width:580px){.g2{grid-template-columns:1fr;}}
+  canvas{display:block;width:100%!important;border-radius:6px;}
+  .foot{text-align:center;margin-top:60px;}
+  .foot p{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(.95rem,2.5vw,1.35rem);background:linear-gradient(90deg,var(--rose),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.65;}
+  .hearts{font-size:1.8rem;margin-top:8px;display:inline-block;animation:pulse 1.4s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="lbl">Una Celebrazione Matematica</div>
+  <h1>Buon 45° Compleanno<br>il 14 Marzo</h1>
+  <div class="sub">Dove il Giorno di π incontra il tuo giorno speciale — perfettamente irrazionale, perfettamente bellissima</div>
+</header>
+
+<div class="cards">
+  <div class="card">
+    <div class="ctag">Teorema I · L'Età</div>
+    <div class="ceq">45 = 9×5 = 3²×5</div>
+    <div class="cdesc"><em>45</em> è un numero triangolare — la somma di tutti gli interi da 1 a 9. È anche un numero di Kaprekar, e uguale a 0+1+2+…+9. Sei letteralmente la somma di tutto. ✓</div>
+  </div>
+  <div class="card">
+    <div class="ctag">Teorema II · La Data</div>
+    <div class="ceq">14/3 ≈ 4,666… ≠ π</div>
+    <div class="cdesc">Ma <em>3/14 → Giorno di π!</em> Poiché π ≈ 3,14159… condividi il compleanno con la costante irrazionale più famosa. Come te, π non si ripete mai e non finisce mai. 🥧</div>
+  </div>
+  <div class="card">
+    <div class="ctag">Teorema III · L'Angolo</div>
+    <div class="ceq">45° = π/4 rad</div>
+    <div class="cdesc">A <em>45°</em> un proiettile raggiunge la gittata massima. A 45 anni sei letteralmente alla tua <em>traiettoria ottimale</em>. Inoltre: tan(45°) = 1 — perfettamente in equilibrio. QED.</div>
+  </div>
+  <div class="card">
+    <div class="ctag">Teorema IV · L'Universo</div>
+    <div class="ceq">e<sup>iπ</sup> + 1 = 0</div>
+    <div class="cdesc">L'identità di Eulero unisce <em>5</em> costanti fondamentali (0, 1, e, i, π). Hai compiuto <em>45 = 9×5</em> anni il <em>3,14</em>. L'universo lo aveva pianificato. Dimostrazione: banale. ∎</div>
+  </div>
+</div>
+
+<!-- TEOREMA I -->
+<div class="div"><span>Teorema I · 45 = 9×5 = 3²×5 · Dimostrazione Visiva</span></div>
+<div class="g2">
+  <div class="box"><div class="boxtitle">① Numero Triangolare T₉ — 1+2+…+9 = 45</div><canvas id="c_tri"></canvas></div>
+  <div class="box"><div class="boxtitle">② Numero di Kaprekar — 45²=2025 → 20+25=45</div><canvas id="c_kap"></canvas></div>
+</div>
+<div class="g2">
+  <div class="box"><div class="boxtitle">③ Somma di Tutte le Cifre 0+1+…+9 = 45</div><canvas id="c_dig"></canvas></div>
+  <div class="box"><div class="boxtitle">④ Fattorizzazione Prima — 3² × 5 = 45</div><canvas id="c_fac"></canvas></div>
+</div>
+<div class="box"><div class="boxtitle">⑤ Mosaico Geometrico · Rettangolo 9 × 5 = 45</div><canvas id="c_mos"></canvas></div>
+
+<!-- TEOREMA II -->
+<div class="div"><span>Teorema II · 14 Marzo = Giorno di π · Curve Rosa Polari</span></div>
+<div class="box"><div class="boxtitle">Curve Rosa r = cos(k·θ) — Un Bouquet Matematico 🌹</div><canvas id="c_rose"></canvas></div>
+
+<!-- TEOREMA III -->
+<div class="div"><span>Teorema III · 45° = π/4 rad · Traiettoria Ottimale</span></div>
+<div class="box"><div class="boxtitle">Gittata Balistica · Il Massimo si Raggiunge Esattamente a 45° 🎯</div><canvas id="c_bal"></canvas></div>
+
+<!-- TEOREMA IV -->
+<div class="div"><span>Teorema IV · e^(iπ)+1=0 · La Più Bella Identità dell'Universo</span></div>
+<div class="box"><div class="boxtitle">Identità di Eulero · Il Cerchio Unitario — La Figura Perfetta dei Pitagorici ✨</div><canvas id="c_euler"></canvas></div>
+
+<!-- BONUS TRACK -->
+<div class="div bonus"><span>🎸 Bonus Track · Cardioide del Compleanno · r = a·(1+cos θ)</span></div>
+<div class="box bonus"><div class="boxtitle bonus">♥ Cardioide · r = a·(1+cos θ) · Ornata con π e 45 ♥</div><canvas id="c_card"></canvas></div>
+
+<div class="foot">
+  <p>"Sei irrazionale come π,<br>trascendente come e,<br>e bella quanto l'identità di Eulero."</p>
+  <span class="hearts">🌹 💛 🎂</span>
+</div>
+
+</div><!-- /wrap -->
+<script>
+(function(){
+'use strict';
+var PI=Math.PI;
+var GOLD='#f5c842',ROSE='#e8567a',TEAL='#42e8d5',LILAC='#c084fc',GREEN='#4ade80';
+var WHITE='rgba(240,232,255,0.88)',DIM='rgba(240,232,255,0.20)';
+
+function ic(id,hpx){
+  var el=document.getElementById(id);
+  var W=Math.max(el.parentElement.clientWidth-36,160);
+  el.width=W; el.height=hpx;
+  return {ctx:el.getContext('2d'),W:W,H:hpx};
+}
+function bgr(ctx,W,H,c0,c1){
+  var g=ctx.createLinearGradient(0,0,W,H);
+  g.addColorStop(0,c0||'#0a0818'); g.addColorStop(1,c1||'#160e28');
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+}
+function lerp(c1,c2,t){
+  function x(h){return[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];}
+  var a=x(c1),b=x(c2);
+  return 'rgb('+Math.round(a[0]+(b[0]-a[0])*t)+','+Math.round(a[1]+(b[1]-a[1])*t)+','+Math.round(a[2]+(b[2]-a[2])*t)+')';
+}
+function rr(ctx,x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y); ctx.arcTo(x+w,y,x+w,y+r,r);
+  ctx.lineTo(x+w,y+h-r); ctx.arcTo(x+w,y+h,x+w-r,y+h,r);
+  ctx.lineTo(x+r,y+h); ctx.arcTo(x,y+h,x,y+h-r,r);
+  ctx.lineTo(x,y+r); ctx.arcTo(x,y,x+r,y,r);
+  ctx.closePath();
+}
+function dot(ctx,x,y,r,col){
+  ctx.beginPath(); ctx.arc(x,y,r,0,2*PI);
+  ctx.fillStyle=col; ctx.shadowColor=col; ctx.shadowBlur=10; ctx.fill(); ctx.shadowBlur=0;
+}
+
+/* ① TRIANGOLO */
+function drawTri(){
+  var o=ic('c_tri',270); var ctx=o.ctx,W=o.W,H=o.H;
+  bgr(ctx,W,H);
+  var rows=9,dr=Math.min(W/(2*rows+4),11.5);
+  var sx=dr*2.25,sy=dr*2.1,top=(H-rows*sy)/2+dr;
+  for(var r=1;r<=rows;r++){
+    var t=(r-1)/(rows-1);
+    var col=t<.5?lerp(GOLD,ROSE,t*2):lerp(ROSE,TEAL,(t-.5)*2);
+    var rsx=W/2-(r-1)*sx/2, ry2=top+(r-1)*sy;
+    for(var c=0;c<r;c++) dot(ctx,rsx+c*sx,ry2,dr,col);
+    ctx.fillStyle='rgba(240,232,255,.28)';
+    ctx.font=Math.max(8,Math.floor(dr*.85))+'px JetBrains Mono,monospace';
+    ctx.fillText('+'+r, rsx+(r-1)*sx+dr+3, ry2+4);
+  }
+  ctx.font='bold 13px JetBrains Mono,monospace';
+  ctx.fillStyle=GOLD; ctx.shadowColor=GOLD; ctx.shadowBlur=8;
+  var eq='1+2+3+4+5+6+7+8+9 = 45';
+  ctx.fillText(eq,W/2-ctx.measureText(eq).width/2,H-10); ctx.shadowBlur=0;
+}
+
+/* ② KAPREKAR */
+function drawKap(){
+  var o=ic('c_kap',270); var ctx=o.ctx,W=o.W,H=o.H;
+  bgr(ctx,W,H);
+  var cx=W/2;
+  var fs=Math.min(Math.floor(W*.26),80);
+  ctx.font='bold '+fs+'px JetBrains Mono,monospace';
+  ctx.fillStyle=GOLD; ctx.shadowColor=GOLD; ctx.shadowBlur=24;
+  ctx.fillText('45',cx-ctx.measureText('45').width/2,80); ctx.shadowBlur=0;
+  function arr(y1,y2,col){
+    ctx.strokeStyle=col+'88'; ctx.lineWidth=1.5; ctx.setLineDash([4,4]);
+    ctx.beginPath(); ctx.moveTo(cx,y1); ctx.lineTo(cx,y2-8); ctx.stroke();
+    ctx.setLineDash([]); ctx.fillStyle=col+'88';
+    ctx.beginPath(); ctx.moveTo(cx,y2); ctx.lineTo(cx-5,y2-8); ctx.lineTo(cx+5,y2-8); ctx.fill();
+  }
+  arr(84,108,GOLD);
+  ctx.font='bold 21px JetBrains Mono,monospace';
+  ctx.fillStyle=TEAL; ctx.shadowColor=TEAL; ctx.shadowBlur=12;
+  var ssq='45² = 2025'; ctx.fillText(ssq,cx-ctx.measureText(ssq).width/2,130); ctx.shadowBlur=0;
+  ctx.strokeStyle=ROSE; ctx.lineWidth=1.5;
+  ctx.beginPath();
+  ctx.moveTo(cx-54,134); ctx.lineTo(cx-54,140); ctx.moveTo(cx+58,134); ctx.lineTo(cx+58,140);
+  ctx.moveTo(cx-54,140); ctx.lineTo(cx-10,140); ctx.moveTo(cx+58,140); ctx.lineTo(cx+10,140);
+  ctx.stroke();
+  arr(138,162,TEAL);
+  ctx.font='bold 18px JetBrains Mono,monospace';
+  ctx.fillStyle=ROSE; ctx.shadowColor=ROSE; ctx.shadowBlur=8; ctx.fillText('20',cx-46,184); ctx.shadowBlur=0;
+  ctx.fillStyle=WHITE; ctx.fillText('+',cx-9,184);
+  ctx.fillStyle=LILAC; ctx.shadowColor=LILAC; ctx.shadowBlur=8; ctx.fillText('25',cx+13,184); ctx.shadowBlur=0;
+  ctx.font='bold 15px JetBrains Mono,monospace';
+  ctx.fillStyle=GOLD; ctx.shadowColor=GOLD; ctx.shadowBlur=8;
+  var sr='= 45  ✓'; ctx.fillText(sr,cx-ctx.measureText(sr).width/2,210); ctx.shadowBlur=0;
+  ctx.fillStyle='rgba(240,232,255,.28)'; ctx.font='10px JetBrains Mono,monospace';
+  var sk='Numero di Kaprekar!'; ctx.fillText(sk,cx-ctx.measureText(sk).width/2,H-10);
+}
+
+/* ③ SOMMA CIFRE */
+function drawDig(){
+  var o=ic('c_dig',270); var ctx=o.ctx,W=o.W,H=o.H;
+  bgr(ctx,W,H);
+  var pal=[TEAL,GREEN,TEAL,LILAC,ROSE,GOLD,ROSE,TEAL,GOLD,LILAC];
+  var cw=Math.floor((W-48)/5)-4, ch=Math.min(52,Math.floor((H-88)/2));
+  var px0=(W-5*(cw+4))/2;
+  var ry=[20,20+ch+14];
+  for(var i=0;i<10;i++){
+    var row=i<5?0:1, col2=i%5;
+    var x=px0+col2*(cw+4), y=ry[row], c=pal[i];
+    ctx.fillStyle=c+'1a'; ctx.strokeStyle=c+'66'; ctx.lineWidth=1.5;
+    rr(ctx,x,y,cw,ch,7); ctx.fill(); ctx.stroke();
+    ctx.fillStyle=c; ctx.shadowColor=c; ctx.shadowBlur=8;
+    ctx.font='bold '+Math.min(Math.floor(ch*.58),26)+'px JetBrains Mono,monospace';
+    ctx.fillText(i,x+cw/2-ctx.measureText(i).width/2,y+ch*.66); ctx.shadowBlur=0;
+  }
+  var by2=ry[1]+ch+14, bh=18, bw=W-px0*2;
+  ctx.fillStyle='rgba(255,255,255,.05)'; rr(ctx,px0,by2,bw,bh,4); ctx.fill();
+  var grd=ctx.createLinearGradient(px0,by2,px0+bw,by2);
+  grd.addColorStop(0,TEAL); grd.addColorStop(.4,GOLD); grd.addColorStop(.7,ROSE); grd.addColorStop(1,LILAC);
+  ctx.fillStyle=grd; rr(ctx,px0,by2,bw,bh,4); ctx.fill();
+  ctx.fillStyle='#0d0a1a'; ctx.font='bold 10px JetBrains Mono,monospace';
+  var sl='0+1+2+3+4+5+6+7+8+9 = 45'; ctx.fillText(sl,px0+bw/2-ctx.measureText(sl).width/2,by2+13);
+  ctx.fillStyle=GOLD; ctx.font='bold 12px JetBrains Mono,monospace'; ctx.shadowColor=GOLD; ctx.shadowBlur=8;
+  var sf='Σ cifre singole = 45  ✓'; ctx.fillText(sf,W/2-ctx.measureText(sf).width/2,H-10); ctx.shadowBlur=0;
+}
+
+/* ④ ALBERO FATTORI */
+function drawFac(){
+  var o=ic('c_fac',270); var ctx=o.ctx,W=o.W,H=o.H;
+  bgr(ctx,W,H);
+  var nr=Math.min(Math.floor(W*.07),26), cx=W/2;
+  var nd=[
+    {x:cx,       y:46, v:'45',c:GOLD, b:true },
+    {x:cx-W*.22, y:116,v:'9', c:ROSE, b:false},
+    {x:cx+W*.22, y:116,v:'5', c:TEAL, b:false},
+    {x:cx-W*.32, y:188,v:'3', c:LILAC,b:false},
+    {x:cx-W*.12, y:188,v:'3', c:LILAC,b:false}
+  ];
+  var edges=[[0,1],[0,2],[1,3],[1,4]];
+  edges.forEach(function(e){
+    ctx.strokeStyle='rgba(245,200,66,.22)'; ctx.lineWidth=1.5;
+    ctx.beginPath(); ctx.moveTo(nd[e[0]].x,nd[e[0]].y+nr*(nd[e[0]].b?1.3:1));
+    ctx.lineTo(nd[e[1]].x,nd[e[1]].y-nr); ctx.stroke();
+  });
+  var elabels=[{f:0,t:1,l:'×9'},{f:0,t:2,l:'×5'},{f:1,t:3,l:'×3'},{f:1,t:4,l:'×3'}];
+  elabels.forEach(function(e){
+    var na=nd[e.f],nb=nd[e.t];
+    ctx.fillStyle='rgba(245,200,66,.55)'; ctx.font='10px JetBrains Mono,monospace';
+    ctx.fillText(e.l,(na.x+nb.x)/2+5,(na.y+nb.y)/2+4);
+  });
+  nd.forEach(function(n){
+    var r=n.b?nr*1.3:nr;
+    ctx.beginPath(); ctx.arc(n.x,n.y,r,0,2*PI);
+    ctx.fillStyle=n.c+'28'; ctx.strokeStyle=n.c; ctx.lineWidth=n.b?2.5:1.8;
+    ctx.shadowColor=n.c; ctx.shadowBlur=n.b?20:10; ctx.fill(); ctx.stroke(); ctx.shadowBlur=0;
+    ctx.fillStyle=n.c; ctx.shadowColor=n.c; ctx.shadowBlur=7;
+    ctx.font='bold '+Math.floor(nr*(n.b?.92:.8))+'px JetBrains Mono,monospace';
+    ctx.fillText(n.v,n.x-ctx.measureText(n.v).width/2,n.y+nr*(n.b?.33:.3)); ctx.shadowBlur=0;
+  });
+  [nd[2],nd[3],nd[4]].forEach(function(n){
+    ctx.fillStyle='rgba(240,232,255,.32)'; ctx.font='9px JetBrains Mono,monospace';
+    ctx.fillText('primo',n.x-ctx.measureText('primo').width/2,n.y+nr+14);
+  });
+  ctx.fillStyle=GOLD; ctx.font='bold 13px JetBrains Mono,monospace'; ctx.shadowColor=GOLD; ctx.shadowBlur=8;
+  var sf='45 = 3² × 5  ✓'; ctx.fillText(sf,cx-ctx.measureText(sf).width/2,H-10); ctx.shadowBlur=0;
+}
+
+/* ⑤ MOSAICO 9×5 */
+function drawMos(){
+  var o=ic('c_mos',320); var ctx=o.ctx,W=o.W,H=o.H;
+  bgr(ctx,W,H);
+  var ROWS=9,COLS=5,ox=44,oy=28;
+  var annotW=108, gW=W-ox-annotW-10, gH=H-70;
+  var cW=gW/COLS, cH=gH/ROWS;
+  var rc=[GOLD,GOLD,ROSE,ROSE,ROSE,TEAL,TEAL,LILAC,LILAC];
+  for(var r=0;r<ROWS;r++){
+    for(var c=0;c<COLS;c++){
+      var x=ox+c*cW, y=oy+r*cH, col3=rc[r], n=r*COLS+c+1;
+      ctx.fillStyle=col3+'1c'; ctx.strokeStyle=col3+'55'; ctx.lineWidth=1;
+      rr(ctx,x+2,y+2,cW-4,cH-4,4); ctx.fill(); ctx.stroke();
+      ctx.fillStyle=col3; ctx.font=Math.min(Math.floor(cW*.37),13)+'px JetBrains Mono,monospace';
+      ctx.fillText(n,x+cW/2-ctx.measureText(n).width/2,y+cH/2+4);
+    }
+    ctx.fillStyle=rc[r]; ctx.font='bold 9.5px JetBrains Mono,monospace';
+    ctx.fillText('riga '+(r+1)+' (+5)',ox+gW+8,oy+r*cH+cH/2+4);
+  }
+  for(var c=0;c<COLS;c++){
+    ctx.fillStyle='rgba(240,232,255,.3)'; ctx.font='10px JetBrains Mono,monospace';
+    ctx.fillText(c+1,ox+c*cW+cW/2-4,oy-8);
+  }
+  var brX=ox-16;
+  ctx.strokeStyle=ROSE+'aa'; ctx.lineWidth=1.5;
+  ctx.beginPath(); ctx.moveTo(brX+6,oy); ctx.lineTo(brX,oy); ctx.lineTo(brX,oy+gH); ctx.lineTo(brX+6,oy+gH); ctx.stroke();
+  ctx.save(); ctx.translate(brX-12,oy+gH/2); ctx.rotate(-PI/2);
+  ctx.fillStyle=ROSE; ctx.font='bold 11px JetBrains Mono,monospace';
+  var lb9='9 righe = 3²'; ctx.fillText(lb9,-ctx.measureText(lb9).width/2,0); ctx.restore();
+  var brY=oy+gH+10;
+  ctx.strokeStyle=TEAL+'aa'; ctx.lineWidth=1.5;
+  ctx.beginPath();
+  ctx.moveTo(ox,brY); ctx.lineTo(ox,brY+6); ctx.moveTo(ox+gW,brY); ctx.lineTo(ox+gW,brY+6);
+  ctx.moveTo(ox,brY+6); ctx.lineTo(ox+gW/2-20,brY+6); ctx.moveTo(ox+gW,brY+6); ctx.lineTo(ox+gW/2+20,brY+6);
+  ctx.stroke();
+  ctx.fillStyle=TEAL; ctx.font='bold 11px JetBrains Mono,monospace';
+  var lb5='5 colonne (primo)'; ctx.fillText(lb5,ox+gW/2-ctx.measureText(lb5).width/2,brY+20);
+  ctx.fillStyle=GOLD; ctx.font='bold 14px JetBrains Mono,monospace'; ctx.shadowColor=GOLD; ctx.shadowBlur=12;
+  var res='9×5 = 45 ✓'; ctx.fillText(res,ox+gW+8,H-10); ctx.shadowBlur=0;
+}
+
+/* ROSE POLARI */
+function drawRose(){
+  var o=ic('c_rose',360); var ctx=o.ctx,W=o.W,H=o.H;
+  var cx=W/2,cy=H/2,R=Math.min(W,H)*.43;
+  var gbg=ctx.createRadialGradient(cx,cy,0,cx,cy,R*1.25);
+  gbg.addColorStop(0,'#1a0a24'); gbg.addColorStop(1,'#0d0a1a');
+  ctx.fillStyle=gbg; ctx.fillRect(0,0,W,H);
+  ctx.strokeStyle='rgba(245,200,66,.07)'; ctx.lineWidth=1;
+  [.33,.66,1].forEach(function(f){ctx.beginPath(); ctx.arc(cx,cy,R*f,0,2*PI); ctx.stroke();});
+  [0,45,90,135].forEach(function(deg){
+    var a=deg*PI/180;
+    ctx.beginPath(); ctx.moveTo(cx-R*1.05*Math.cos(a),cy-R*1.05*Math.sin(a));
+    ctx.lineTo(cx+R*1.05*Math.cos(a),cy+R*1.05*Math.sin(a)); ctx.stroke();
+  });
+  function rosa(k,col,alpha,lw,glow){
+    ctx.save(); ctx.beginPath(); ctx.strokeStyle=col; ctx.lineWidth=lw; ctx.globalAlpha=alpha;
+    if(glow){ctx.shadowColor=col; ctx.shadowBlur=18;}
+    for(var i=0;i<=16000;i++){
+      var t=4*PI*i/16000,r=Math.cos(k*t)*R,x=cx+r*Math.cos(t),y=cy+r*Math.sin(t);
+      i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+    }
+    ctx.stroke(); ctx.restore();
+  }
+  rosa(5,GOLD,.45,1.2,false); rosa(9,ROSE,.55,1.5,false); rosa(14,TEAL,.88,2.2,true);
+  dot(ctx,cx,cy,3.5,WHITE);
+  [[TEAL,'r = cos(14·θ)  ←  14 Marzo 🎂'],[ROSE,'r = cos( 9·θ)  ←  45 = 9×5'],[GOLD,'r = cos( 5·θ)  ←  45 = 9×5']].forEach(function(p,i){
+    ctx.fillStyle=p[0]; ctx.font='bold 11px JetBrains Mono,monospace'; ctx.fillText(p[1],14,22+i*19);
+  });
+  ctx.fillStyle='rgba(240,232,255,.3)'; ctx.font='11px JetBrains Mono,monospace';
+  var n='45 = 9×5   |   14 Marzo   |   Giorno di π';
+  ctx.fillText(n,cx-ctx.measureText(n).width/2,H-12);
+}
+
+/* BALISTICA */
+function drawBal(){
+  var o=ic('c_bal',360); var ctx=o.ctx,W=o.W,H=o.H;
+  bgr(ctx,W,H,'#06080f','#0c1020');
+  var ml=56,mr=20,mt=36,mb=56;
+  var pw=W-ml-mr, ph=H-mt-mb, ox=ml, oyy=mt;
+  ctx.strokeStyle='rgba(245,200,66,.18)'; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(ox,oyy+ph); ctx.lineTo(ox+pw,oyy+ph); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(ox,oyy); ctx.lineTo(ox,oyy+ph+4); ctx.stroke();
+  ctx.fillStyle='rgba(240,232,255,.38)'; ctx.font='11px JetBrains Mono,monospace';
+  ctx.fillText('distanza →',ox+pw/2-30,oyy+ph+38);
+  ctx.save(); ctx.translate(14,oyy+ph/2); ctx.rotate(-PI/2); ctx.fillText('altezza',-20,0); ctx.restore();
+  var g=9.8,v0=30,maxR=v0*v0/g,maxH=v0*v0/(2*g);
+  var angles=[15,30,45,60,75];
+  var clrs=['rgba(192,132,252,.55)','rgba(66,232,213,.55)',GOLD,'rgba(66,232,213,.55)','rgba(192,132,252,.55)'];
+  var lws=[1,1,3,1,1];
+  angles.forEach(function(deg,idx){
+    var ang=deg*PI/180,vx=v0*Math.cos(ang),vy=v0*Math.sin(ang),T=2*vy/g;
+    ctx.save(); ctx.beginPath(); ctx.strokeStyle=clrs[idx]; ctx.lineWidth=lws[idx];
+    if(deg===45){ctx.shadowColor=GOLD; ctx.shadowBlur=14;}
+    var first=true;
+    for(var i=0;i<=300;i++){
+      var t=T*i/300, xp=ox+(vx*t)/maxR*pw, yp=oyy+ph-(vy*t-.5*g*t*t)/maxH*ph;
+      if(xp<ox||xp>ox+pw){first=true; continue;}
+      if(first){ctx.moveTo(xp,yp); first=false;}else ctx.lineTo(xp,yp);
+    }
+    ctx.stroke(); ctx.restore();
+    var tp=vy/g, xp2=ox+(vx*tp)/maxR*pw, yp2=oyy+ph-(vy*tp-.5*g*tp*tp)/maxH*ph;
+    ctx.fillStyle=clrs[idx]; ctx.font='bold '+(deg===45?11:9)+'px JetBrains Mono,monospace';
+    ctx.fillText(deg+'°',xp2+2,yp2-6);
+  });
+  var a45=PI/4,vx45=v0*Math.cos(a45),vy45=v0*Math.sin(a45),T45=2*vy45/g;
+  var xL=ox+vx45*T45/maxR*pw;
+  dot(ctx,xL,oyy+ph,6,GOLD);
+  ctx.fillStyle=GOLD; ctx.font='bold 11px JetBrains Mono,monospace'; ctx.fillText('gittata MAX',xL-38,oyy+ph+18);
+  ctx.strokeStyle=GOLD+'cc'; ctx.lineWidth=1.5;
+  ctx.beginPath(); ctx.arc(ox,oyy+ph,36,-PI/4,0); ctx.stroke();
+  ctx.fillStyle=GOLD; ctx.font='bold 12px JetBrains Mono,monospace'; ctx.fillText('45°',ox+22,oyy+ph-14);
+  var tp45=vy45/g, xpk=ox+vx45*tp45/maxR*pw, ypk=oyy+ph-(vy45*tp45-.5*g*tp45*tp45)/maxH*ph;
+  ctx.save(); ctx.setLineDash([3,5]); ctx.strokeStyle='rgba(245,200,66,.28)'; ctx.lineWidth=1;
+  ctx.beginPath(); ctx.moveTo(xpk,ypk); ctx.lineTo(xpk,oyy+ph); ctx.stroke(); ctx.restore();
+  ctx.fillStyle='rgba(240,232,255,.22)'; ctx.font='9px JetBrains Mono,monospace';
+  [.25,.5,.75,1].forEach(function(f){
+    var yy=oyy+ph-f*ph;
+    ctx.save(); ctx.strokeStyle='rgba(245,200,66,.06)'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(ox,yy); ctx.lineTo(ox+pw,yy); ctx.stroke(); ctx.restore();
+    ctx.fillText(Math.round(f*maxH)+'m',2,yy+4);
+  });
+  ctx.fillStyle='rgba(240,232,255,.32)'; ctx.font='10px JetBrains Mono,monospace';
+  var cap='sin(45°)=cos(45°)=√2/2  |  tan(45°)=1  |  gittata massima a 45°';
+  ctx.fillText(cap,ox+pw/2-ctx.measureText(cap).width/2,H-8);
+}
+
+/* EULERO — cerchio pieno arcobaleno + didascalia pitagorica */
+function drawEuler(){
+  var o=ic('c_euler',560); var ctx=o.ctx,W=o.W,H=o.H;
+
+  // ── layout: cerchio nella metà superiore, testo nella metà inferiore
+  var cx=W/2, cy=H*0.42, R=Math.min(W*0.34, H*0.30);
+
+  // ── sfondo radiale profondo
+  var gbg=ctx.createRadialGradient(cx,cy,0,cx,cy,R*2.4);
+  gbg.addColorStop(0,'#100820'); gbg.addColorStop(0.5,'#0d0a1a'); gbg.addColorStop(1,'#060410');
+  ctx.fillStyle=gbg; ctx.fillRect(0,0,W,H);
+
+  // ── cerchio pieno con riempimento conico arcobaleno
+  // Disegniamo N settori a cuneo dal centro, ciascuno con il suo colore
+  var sectors=360;
+  for(var i=0;i<sectors;i++){
+    var a0=2*PI*i/sectors, a1=2*PI*(i+1)/sectors;
+    // Colore che percorre l'intero spettro: teal→gold→rose→lilac→green→teal
+    var f=i/sectors;
+    var ccol;
+    if(f<0.2)       ccol=lerp(TEAL,  GREEN, f/0.2);
+    else if(f<0.4)  ccol=lerp(GREEN, GOLD,  (f-0.2)/0.2);
+    else if(f<0.6)  ccol=lerp(GOLD,  ROSE,  (f-0.4)/0.2);
+    else if(f<0.8)  ccol=lerp(ROSE,  LILAC, (f-0.6)/0.2);
+    else            ccol=lerp(LILAC, TEAL,  (f-0.8)/0.2);
+
+    // Riempimento settore con gradiente radiale centro→bordo (da scuro a colore)
+    var grad=ctx.createRadialGradient(cx,cy,0,cx,cy,R);
+    grad.addColorStop(0,  'rgba(10,6,20,0.92)');
+    grad.addColorStop(0.55,'rgba(10,6,20,0.55)');
+    grad.addColorStop(1,  ccol);
+    ctx.beginPath();
+    ctx.moveTo(cx,cy); ctx.arc(cx,cy,R,a0,a1); ctx.closePath();
+    ctx.fillStyle=grad; ctx.fill();
+  }
+
+  // ── anello esterno luminoso (bordo del cerchio) — arcobaleno pieno opaco
+  var ringSteps=1440;
+  for(var i=0;i<ringSteps;i++){
+    var t0=2*PI*i/ringSteps, t1=2*PI*(i+1)/ringSteps;
+    var f=i/ringSteps, rc;
+    if(f<0.2)      rc=lerp(TEAL,  GREEN,(f)/0.2);
+    else if(f<0.4) rc=lerp(GREEN, GOLD, (f-0.2)/0.2);
+    else if(f<0.6) rc=lerp(GOLD,  ROSE, (f-0.4)/0.2);
+    else if(f<0.8) rc=lerp(ROSE,  LILAC,(f-0.6)/0.2);
+    else           rc=lerp(LILAC, TEAL, (f-0.8)/0.2);
+    ctx.beginPath();
+    ctx.moveTo(cx+R*Math.cos(t0), cy-R*Math.sin(t0));
+    ctx.lineTo(cx+R*Math.cos(t1), cy-R*Math.sin(t1));
+    ctx.strokeStyle=rc; ctx.lineWidth=4;
+    ctx.shadowColor=rc; ctx.shadowBlur=8;
+    ctx.stroke(); ctx.shadowBlur=0;
+  }
+
+  // ── raggi-guida sottili ogni 45° (Pitagorici!)
+  ctx.strokeStyle='rgba(255,255,255,0.07)'; ctx.lineWidth=1;
+  for(var d=0;d<360;d+=45){
+    var aa=d*PI/180;
+    ctx.beginPath(); ctx.moveTo(cx,cy);
+    ctx.lineTo(cx+R*Math.cos(aa), cy-R*Math.sin(aa)); ctx.stroke();
+  }
+
+  // ── assi Re/Im
+  ctx.strokeStyle='rgba(240,232,255,0.28)'; ctx.lineWidth=1.5;
+  ctx.beginPath(); ctx.moveTo(cx-R*1.35,cy); ctx.lineTo(cx+R*1.35,cy); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx,cy-R*1.35); ctx.lineTo(cx,cy+R*1.35); ctx.stroke();
+  // frecce
+  ctx.fillStyle='rgba(240,232,255,0.28)';
+  ctx.beginPath(); ctx.moveTo(cx+R*1.35,cy); ctx.lineTo(cx+R*1.27,cy-5); ctx.lineTo(cx+R*1.27,cy+5); ctx.fill();
+  ctx.beginPath(); ctx.moveTo(cx,cy-R*1.35); ctx.lineTo(cx-5,cy-R*1.27); ctx.lineTo(cx+5,cy-R*1.27); ctx.fill();
+  ctx.fillStyle='rgba(240,232,255,.42)'; ctx.font='12px JetBrains Mono,monospace';
+  ctx.fillText('Re', cx+R*1.36, cy-8);
+  ctx.fillText('Im', cx+7, cy-R*1.34);
+
+  // ── etichette ±1, ±i sugli assi
+  ctx.fillStyle='rgba(240,232,255,.30)'; ctx.font='10px JetBrains Mono,monospace';
+  ctx.fillText('+1', cx+R+5, cy+14); ctx.fillText('−1', cx-R-22, cy+14);
+  ctx.fillText('+i', cx+6, cy-R-6);  ctx.fillText('−i', cx+6, cy+R+14);
+  // tick marks
+  ctx.strokeStyle='rgba(240,232,255,.25)'; ctx.lineWidth=1;
+  [[cx+R,cy],[cx-R,cy],[cx,cy-R],[cx,cy+R]].forEach(function(p){
+    ctx.beginPath(); ctx.moveTo(p[0]-4,p[1]); ctx.lineTo(p[0]+4,p[1]); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(p[0],p[1]-4); ctx.lineTo(p[0],p[1]+4); ctx.stroke();
+  });
+
+  // ── arco dorato evidenziato 0→π (il viaggio di e^(iθ) fino a −1)
+  ctx.save(); ctx.beginPath(); ctx.strokeStyle=GOLD; ctx.lineWidth=4;
+  ctx.shadowColor=GOLD; ctx.shadowBlur=20;
+  for(var i=0;i<=400;i++){
+    var theta=PI*i/400, xx=cx+R*Math.cos(theta), yy=cy-R*Math.sin(theta);
+    i===0?ctx.moveTo(xx,yy):ctx.lineTo(xx,yy);
+  }
+  ctx.stroke(); ctx.restore();
+
+  // ── freccia alla fine dell'arco (punto −1)
+  ctx.save(); ctx.fillStyle=GOLD; ctx.shadowColor=GOLD; ctx.shadowBlur=14;
+  ctx.translate(cx-R,cy); ctx.rotate(PI/2);
+  ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(-7,-14); ctx.lineTo(7,-14); ctx.closePath(); ctx.fill();
+  ctx.restore(); ctx.shadowBlur=0;
+
+  // ── etichetta θ=π sull'arco
+  ctx.fillStyle='rgba(245,200,66,.75)'; ctx.font='bold 11px JetBrains Mono,monospace';
+  ctx.fillText('θ = π', cx+10, cy-R*0.52);
+
+  // ── 4 punti cardinali con raggiera e label
+  var kpts=[
+    {theta:0,      label:'e^(i·0) = 1',  col:GREEN, dx:10, dy:4  },
+    {theta:PI/2,   label:'e^(iπ/2) = i', col:TEAL,  dx:10, dy:-12},
+    {theta:PI,     label:'e^(iπ) = −1',  col:GOLD,  dx:-112,dy:16},
+    {theta:PI*1.5, label:"e^(i·3π/2)=−i",col:LILAC, dx:10, dy:14 }
+  ];
+  kpts.forEach(function(p){
+    var x=cx+R*Math.cos(p.theta), y=cy-R*Math.sin(p.theta);
+    ctx.save(); ctx.setLineDash([3,6]); ctx.strokeStyle=p.col+'50'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(x,y); ctx.stroke(); ctx.restore();
+    // punto con alone
+    ctx.beginPath(); ctx.arc(x,y,7,0,2*PI);
+    ctx.fillStyle=p.col+'33'; ctx.fill();
+    dot(ctx,x,y,5,p.col);
+    ctx.fillStyle=p.col; ctx.font='bold 11px JetBrains Mono,monospace';
+    ctx.shadowColor=p.col; ctx.shadowBlur=6;
+    ctx.fillText(p.label,x+p.dx,y+p.dy); ctx.shadowBlur=0;
+  });
+
+  // ── punto centrale
+  dot(ctx,cx,cy,4,WHITE);
+
+  // ── BOX identità
+  var bW=Math.min(220,W*0.45), bH=52, bx2=cx-bW/2, by3=cy+R*1.18;
+  ctx.fillStyle='rgba(245,200,66,0.08)'; ctx.strokeStyle='rgba(245,200,66,0.35)'; ctx.lineWidth=1.5;
+  rr(ctx,bx2,by3,bW,bH,10); ctx.fill(); ctx.stroke();
+  ctx.fillStyle=GOLD; ctx.font='bold 22px JetBrains Mono,monospace';
+  ctx.shadowColor=GOLD; ctx.shadowBlur=28;
+  var id='e^(iπ) + 1 = 0';
+  ctx.fillText(id,bx2+bW/2-ctx.measureText(id).width/2,by3+34); ctx.shadowBlur=0;
+
+  // ── Didascalia ricca in tre righe
+  var captionY=by3+bH+22;
+  var lines=[
+    {t:'Il cerchio unitario: la figura perfetta. Per i Pitagorici il cerchio era', col:'rgba(240,232,255,0.70)', font:'italic 11px Playfair Display,serif'},
+    {t:'il simbolo del divino — privo di inizio e di fine, infinitamente simmetrico.', col:'rgba(240,232,255,0.70)', font:'italic 11px Playfair Display,serif'},
+    {t:'Eulero lo abita con e, i e π: cinque costanti, un\'unica equazione, bellezza pura.', col:'rgba(245,200,66,0.80)', font:'italic 11px Playfair Display,serif'},
+  ];
+  lines.forEach(function(l,i){
+    ctx.fillStyle=l.col; ctx.font=l.font;
+    ctx.fillText(l.t, cx-ctx.measureText(l.t).width/2, captionY+i*17);
+  });
+
+  // ── riga tecnica finale
+  var techY=captionY+lines.length*17+10;
+  ctx.fillStyle='rgba(240,232,255,.28)'; ctx.font='9.5px JetBrains Mono,monospace';
+  var tech='e^(iθ)=cosθ+i·sinθ  |  |e^(iθ)|=1 ∀θ  |  5 costanti: 0  1  e  i  π';
+  ctx.fillText(tech, cx-ctx.measureText(tech).width/2, techY);
+}
+
+/* CARDIOIDE (bonus) */
+function drawCard(){
+  var o=ic('c_card',460); var ctx=o.ctx,W=o.W,H=o.H;
+  var cx=W/2,cy=H/2+10,a=Math.min(W,H)*.215;
+  var gbg=ctx.createRadialGradient(cx,cy,0,cx,cy,a*2.8);
+  gbg.addColorStop(0,'#1a0824'); gbg.addColorStop(.6,'#0f0a1e'); gbg.addColorStop(1,'#0d0a1a');
+  ctx.fillStyle=gbg; ctx.fillRect(0,0,W,H);
+  [{r:a*.314,c:'rgba(245,200,66,.10)'},{r:a,c:'rgba(245,200,66,.08)'},{r:a*1.414,c:'rgba(66,232,213,.06)'},{r:a*2,c:'rgba(245,200,66,.05)'}].forEach(function(g){
+    ctx.strokeStyle=g.c; ctx.lineWidth=1; ctx.beginPath(); ctx.arc(cx,cy,g.r,0,2*PI); ctx.stroke();
+  });
+  ctx.strokeStyle='rgba(245,200,66,.09)'; ctx.lineWidth=1;
+  for(var d=0;d<360;d+=45){
+    var aa=d*PI/180; ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(cx+a*2.2*Math.cos(aa),cy+a*2.2*Math.sin(aa)); ctx.stroke();
+  }
+  ctx.save(); ctx.beginPath(); ctx.strokeStyle='rgba(192,132,252,.28)'; ctx.lineWidth=1;
+  for(var i=0;i<=3000;i++){
+    var t=4.5*PI*i/3000,r=PI/10*t*a*.55,x=cx+r*Math.cos(t),y=cy+r*Math.sin(t);
+    i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+  }
+  ctx.stroke(); ctx.restore();
+  for(var i=0;i<8000;i++){
+    var t0=2*PI*i/8000,t1=2*PI*(i+1)/8000;
+    var r0=a*(1+Math.cos(t0)),r1=a*(1+Math.cos(t1));
+    var x0=cx+r0*Math.cos(t0),y0=cy+r0*Math.sin(t0),x1=cx+r1*Math.cos(t1),y1=cy+r1*Math.sin(t1);
+    var h=i/8000,ccol=h<.33?lerp(ROSE,GOLD,h/.33):h<.66?lerp(GOLD,TEAL,(h-.33)/.33):lerp(TEAL,ROSE,(h-.66)/.34);
+    ctx.save(); ctx.beginPath(); ctx.moveTo(x0,y0); ctx.lineTo(x1,y1);
+    ctx.strokeStyle=ccol; ctx.lineWidth=2.8; ctx.shadowColor=ccol; ctx.shadowBlur=6; ctx.stroke(); ctx.restore();
+  }
+  [{t:0,l:'r_max=2a',c:GOLD},{t:PI/2,l:'r=a (θ=π/2)',c:TEAL},{t:PI,l:'cusp r=0',c:ROSE},{t:PI*3.14/45,l:'θ=π·3.14/45',c:LILAC}].forEach(function(p){
+    var r=a*(1+Math.cos(p.t)),ppx=cx+r*Math.cos(p.t),ppy=cy+r*Math.sin(p.t);
+    ctx.save(); ctx.setLineDash([3,5]); ctx.strokeStyle=p.c+'55'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(cx,cy); ctx.lineTo(ppx,ppy); ctx.stroke(); ctx.restore();
+    dot(ctx,ppx,ppy,5,p.c);
+    ctx.fillStyle=p.c; ctx.font='bold 10px JetBrains Mono,monospace';
+    ctx.fillText(p.l,ppx+(ppx>cx?8:-ctx.measureText(p.l).width-4),ppy+(ppy>cy?14:-6));
+  });
+  ctx.fillStyle='rgba(240,232,255,.18)'; ctx.font='bold 13px JetBrains Mono,monospace';
+  var fo='r = a·(1 + cos θ)'; ctx.fillText(fo,cx-ctx.measureText(fo).width/2,cy+6);
+  ctx.fillStyle='rgba(245,200,66,.45)'; ctx.font='11px JetBrains Mono,monospace';
+  var fs2='a ∝ 45   |   θ speciale = π/3.14 ≈ 1 rad'; ctx.fillText(fs2,cx-ctx.measureText(fs2).width/2,cy+22);
+  [[ROSE,'Cardioide r=a(1+cosθ) — il cuore della festa'],[LILAC,'Spirale di Archimede r=(π/10)·θ'],[GOLD,'Raggi ogni 45° — il tuo numero']].forEach(function(p,i,arr){
+    var lx=14,ly=H-14-(arr.length-1-i)*17;
+    ctx.fillStyle=p[0]; ctx.fillRect(lx,ly-7,15,2.5);
+    ctx.font='9.5px JetBrains Mono,monospace'; ctx.fillText(p[1],lx+21,ly-1);
+  });
+  ctx.fillStyle='rgba(240,232,255,.28)'; ctx.font='11px JetBrains Mono,monospace';
+  var no='45 anni   ·   14 Marzo   ·   π ≈ 3,14159…'; ctx.fillText(no,cx-ctx.measureText(no).width/2,H-12);
+}
+
+/* AVVIO */
+function renderAll(){
+  drawTri(); drawKap(); drawDig(); drawFac(); drawMos();
+  drawRose(); drawBal(); drawEuler(); drawCard();
+}
+window.addEventListener('load',renderAll);
+setTimeout(renderAll,400);
+})();
+</script>
+</body>
+</html>
